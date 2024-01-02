@@ -30,9 +30,9 @@ export default function Testimonials() {
             <h2 className="h2 mb-4 text-center">Pre-order for early access</h2>
             <p className="text-xl text-gray-600" data-aos="zoom-y-out">You get the following right after:</p>
 
-            <li className='text-md'>A free E-book on doing more for your restaurant with digital tools</li>
-            <li className='text-md'>A consultation to discuss how Karu can fit into your current workflow</li>
-            
+            <li className='text-md'>Early access to E-book on doing more for your restaurant with digital tools</li>
+            <li className='text-md'>A free consultation to discuss how our solutions can fit into your current workflow</li>
+
             <button className='mx-auto my-4 bg-blue-500 px-6 py-3 rounded-lg text-white'>Proceed to checkout</button>
 
           </div>
