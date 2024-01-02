@@ -28,15 +28,12 @@ export default function Testimonials() {
           {/* Section header */}
           <div className="max-w-3xl mx-auto  text-center flex flex-col gap-2 pb-12 md:pb-16">
             <h2 className="h2 mb-4 text-center">Pre-order for early access</h2>
-            <p className="text-xl text-gray-600" data-aos="zoom-y-out">You'll get the following right after:</p>
+            <p className="text-xl text-gray-600" data-aos="zoom-y-out">You get the following right after:</p>
 
             <li className='text-md'>A free E-book on doing more for your restaurant with digital tools</li>
-            <li className='text-md'>A consultation to discuss how it can fit into your current workflow</li>
-
-            <p className='text-lg text-gray-600 mt-6' data-aos="zoom-y-out">And these, soon after: </p>
-            <li className='text-md'>Priority Access to the application</li>
-
-            <button className='mx-auto my-4 bg-blue-500 px-6 py-3 rounded-lg text-white'>Pay $10 dollars for pre-order</button>
+            <li className='text-md'>A consultation to discuss how Karu can fit into your current workflow</li>
+            
+            <button className='mx-auto my-4 bg-blue-500 px-6 py-3 rounded-lg text-white'>Proceed to checkout</button>
 
           </div>
         </div>
