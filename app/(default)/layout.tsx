@@ -11,7 +11,7 @@ export default function DefaultLayout({
   children,
 }: {
   children: React.ReactNode
-}) {  
+}) {
 
   useEffect(() => {
     AOS.init({
@@ -25,12 +25,15 @@ export default function DefaultLayout({
   return (
     <>
       <main className="grow">
-
         {children}
-
       </main>
 
-      <Footer />
+      <div className="text-sm text-gray-600 mr-4 max-w-xs my-4 text-center">
+        <span>
+          &copy; KaruVault.com All rights reserved.
+        </span>
+      </div>
+      {/* <Footer /> */}
     </>
   )
 }
