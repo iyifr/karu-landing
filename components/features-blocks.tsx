@@ -1,3 +1,5 @@
+import Balancer from "react-wrap-balancer";
+
 export default function FeaturesBlocks() {
   return (
     <section className="relative">
@@ -12,8 +14,16 @@ export default function FeaturesBlocks() {
           {/* Section header */}
           <div className="max-w-3xl mx-auto text-center pb-12 md:pb-20">
             <h2 className="h2 mb-4 leading-snug">Made for <span className="font-bold text-orange-400 mx-1">customer-obsessed</span> restaurants </h2>
-            <p className="text-xl text-gray-600">Want to be intentional about your customer's experience ?</p>
-            <p className="text-xl text-gray-600">Then you've made the best choice.</p>
+            <p className="md:text-xl text-lg text-gray-600">
+              <Balancer>
+                Want to be more intentional about your customer's experience ?
+              </Balancer>
+            </p>
+            <p className="md:text-xl text-lg text-gray-600 mt-6">
+              <Balancer>
+                You've come to the correct landing page
+              </Balancer>
+            </p>
           </div>
 
           {/* Items */}

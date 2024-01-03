@@ -2,12 +2,15 @@
 import Image from 'next/image'
 import TestimonialImage from '@/public/images/testimonial.jpg'
 import { PaystackButton } from 'react-paystack'
+import { useState } from 'react'
 
 
 export default function Testimonials() {
+
+  const [email, setEmail] = useState('')
   const config = {
     reference: (new Date()).getTime().toString(),
-    email: "user@example.com",
+    email,
     amount: 800000, //Amount is in the country's lowest currency. E.g Kobo, so 20000 kobo = N200
     publicKey: 'pk_test_f7bd5ab911f3cd85c96cfc86393aef1de79b356f',
   };
@@ -59,7 +62,9 @@ export default function Testimonials() {
             <li className='text-md'>Exclusive access to features</li>
             <li className='text-md'>Priority support & onboarding for your team.</li>
 
-            <button className='mx-auto my-4 bg-blue-500 px-6 py-3 rounded-lg text-white'>
+            <input onChange={(e) => setEmail(e.target.value)} placeholder='youremail@email.com' className='mt-4 w-64 py-3 mx-auto rounded-xl ring-2 ring-orange-400 border-none' />
+
+            <button className='mx-auto my-4 bg-orange-400 text-black px-6 py-3 rounded-lg w-64' disabled={email === ''}>
               <PaystackButton {...componentProps} />
             </button>
 
