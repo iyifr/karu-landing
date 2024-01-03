@@ -1,7 +1,34 @@
+'use client'
 import Image from 'next/image'
 import TestimonialImage from '@/public/images/testimonial.jpg'
+import { PaystackButton } from 'react-paystack'
+
 
 export default function Testimonials() {
+  const config = {
+    reference: (new Date()).getTime().toString(),
+    email: "user@example.com",
+    amount: 800000, //Amount is in the country's lowest currency. E.g Kobo, so 20000 kobo = N200
+    publicKey: 'pk_test_f7bd5ab911f3cd85c96cfc86393aef1de79b356f',
+  };
+  const handlePaystackSuccessAction = (reference: any) => {
+    // Implementation for whatever you want to do with reference and after success call.
+    console.log(reference);
+  };
+
+  // you can call this function anything
+  const handlePaystackCloseAction = () => {
+    // implementation for  whatever you want to do when the Paystack dialog closed.
+    console.log('closed')
+  }
+
+  const componentProps = {
+    ...config,
+    text: 'Pre order now',
+    onSuccess: (reference: any) => handlePaystackSuccessAction(reference),
+    onClose: handlePaystackCloseAction,
+  };
+
   return (
     <section className="relative">
 
@@ -28,12 +55,13 @@ export default function Testimonials() {
           {/* Section header */}
           <div className="max-w-3xl mx-auto  text-center flex flex-col gap-2 pb-12 md:pb-16">
             <h2 className="h2 mb-4 text-center">Pre-order for early access</h2>
-            <p className="text-xl text-gray-600" data-aos="zoom-y-out">You get the following right after:</p>
+            <li className='text-md'>On order , you get a free consultation to discuss how our solutions can fit into your current workflow</li>
+            <li className='text-md'>Exclusive access to features</li>
+            <li className='text-md'>Priority support & onboarding for your team.</li>
 
-            <li className='text-md'>Early access to E-book on doing more for your restaurant with digital tools</li>
-            <li className='text-md'>A free consultation to discuss how our solutions can fit into your current workflow</li>
-
-            <button className='mx-auto my-4 bg-blue-500 px-6 py-3 rounded-lg text-white'>Proceed to checkout</button>
+            <button className='mx-auto my-4 bg-blue-500 px-6 py-3 rounded-lg text-white'>
+              <PaystackButton {...componentProps} />
+            </button>
 
           </div>
         </div>
