@@ -19,9 +19,9 @@ export default function FeaturesBlocks() {
                 Want to be more intentional about your customer's experience ?
               </Balancer>
             </p>
-            <p className="md:text-xl text-lg text-gray-600 mt-6">
+            <p className="md:text-xl text-lg text-gray-600 mt-4">
               <Balancer>
-                You've come to the correct landing page
+                We're building software tools to help you go from zero to hero with your customers.
               </Balancer>
             </p>
           </div>
