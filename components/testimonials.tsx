@@ -11,8 +11,8 @@ export default function Testimonials() {
   const config = {
     reference: (new Date()).getTime().toString(),
     email,
-    amount: 800000, //Amount is in the country's lowest currency. E.g Kobo, so 20000 kobo = N200
-    publicKey: 'pk_test_f7bd5ab911f3cd85c96cfc86393aef1de79b356f',
+    amount: 8000 * 100, //Amount is in the country's lowest currency. E.g Kobo, so 20000 kobo = N200
+    publicKey: process.env.NEXT_PUBLIC_PAYSTACK_KEY as string,
   };
   const handlePaystackSuccessAction = (reference: any) => {
     // Implementation for whatever you want to do with reference and after success call.
@@ -27,7 +27,7 @@ export default function Testimonials() {
 
   const componentProps = {
     ...config,
-    text: 'Pre order now',
+    text: 'Pre order now at 8,000 naira',
     onSuccess: (reference: any) => handlePaystackSuccessAction(reference),
     onClose: handlePaystackCloseAction,
   };
@@ -64,7 +64,7 @@ export default function Testimonials() {
 
             <input onChange={(e) => setEmail(e.target.value)} placeholder='youremail@email.com' className='mt-4 w-64 py-3 mx-auto rounded-xl ring-2 ring-orange-400 border-none' />
 
-            <button className='mx-auto my-4 bg-orange-400 text-black px-6 py-3 rounded-lg w-64' disabled={email === ''}>
+            <button className='mx-auto my-4 bg-orange-400 text-black px-6 py-3 rounded-lg w-72 disabled:opacity-60' disabled={email === ''}>
               <PaystackButton {...componentProps} />
             </button>
 

@@ -86,8 +86,8 @@ const ContactModal = ({ isTrue, closeModal }: { isTrue: boolean, closeModal: () 
     },
   }}>
     <div className='flex flex-col gap-4'>
-      <a className='underline underline-offset-2 text-green-400' href='https://wa.me/+2347042143357?text=Hi, My name is ___. I want to ask a few questions about your software offering, Karu Vault' target='_blank'>Reach me on whatsapp</a>
-      <a href='mailto:adekileiyimide@gmail.com' className='underline underline-offset-2'>Reach me by email</a>
+      <a className='underline underline-offset-2 text-green-400' href='https://wa.me/+2347042143357?text=Hi, I have a few questions about your software offering, Karu Vault' target='_blank'>Reach me on whatsapp</a>
+      <a href='mailto:iyimide@skiff.com' className='underline underline-offset-2'>Reach me by email</a>
 
       <button onClick={closeModal} className='py-3 rounded-full bg-black text-white'>Dismiss</button>
     </div>

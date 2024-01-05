@@ -16,12 +16,12 @@ export default function FeaturesBlocks() {
             <h2 className="h2 mb-4 leading-snug">Made for <span className="font-bold text-orange-400 mx-1">customer-obsessed</span> restaurants </h2>
             <p className="md:text-xl text-lg text-gray-600">
               <Balancer>
-                Want to be more intentional about your customer's experience ?
+                Want to be more intentional about your customers ?
               </Balancer>
             </p>
             <p className="md:text-xl text-lg text-gray-600 mt-4">
               <Balancer>
-                We're building software tools to help you go from zero to hero with your customers.
+                We're building software to help you go from zero to hero!
               </Balancer>
             </p>
           </div>
