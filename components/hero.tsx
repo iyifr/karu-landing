@@ -33,7 +33,7 @@ export default function Hero() {
 
           {/* Section header */}
           <div className="text-center pb-12 md:pb-16">
-            <h1 className="text-5xl md:text-6xl font-extrabold leading-tighter tracking-tighter mb-4" data-aos="zoom-y-out">
+            <h1 className="text-5xl font-block md:text-6xl font-extrabold leading-tighter tracking-tighter mb-4" data-aos="zoom-y-out">
               <Balancer>
                 It's time to build your restaurant's <span className="bg-clip-text text-transparent bg-gradient-to-bl from-orange-400 to-yellow-300">tribe</span>
               </Balancer>
@@ -41,7 +41,7 @@ export default function Hero() {
             <div className="max-w-3xl mx-auto md:mt-12">
               <p className="text-xl text-gray-600 my-6" data-aos="zoom-y-out" data-aos-delay="150">
                 <Balancer>
-                  Build customer loyalty, get lots more word-of-mouth & watch your business grow🚀
+                  Get your customers to buy <span className='text-orange-500 font-semibold'>more</span>, buy <span className='text-orange-500 font-semibold'>more often</span>, then sit back & watch your business grow🚀
                 </Balancer>
               </p>
               <div className="max-w-xs md:mt-8 mx-auto sm:max-w-none sm:flex sm:justify-center" data-aos="zoom-y-out" data-aos-delay="300">
@@ -49,7 +49,7 @@ export default function Hero() {
                   <a className="btn bg-gradient-to-br from-orange-400 to-yellow-400 text-black hover:bg-orange-500/90 w-full mb-4 sm:w-auto sm:mb-0 rounded-lg" href="#pay">Pre-order the package</a>
                 </div>
                 <div>
-                  <a onClick={() => setIsModalOpen(true)} className="btn text-white bg-gray-900 hover:bg-gray-800 w-full sm:w-auto sm:ml-4 rounded-lg" href="#0">Talk with the developer</a>
+                  <a onClick={() => setIsModalOpen(true)} className="btn text-white bg-gray-900 hover:bg-gray-800 w-full sm:w-auto sm:ml-4 rounded-lg" href="#0">Try out demo for free</a>
                 </div>
               </div>
             </div>
