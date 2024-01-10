@@ -46,7 +46,7 @@ export default function Hero() {
               </p>
               <div className="max-w-xs md:mt-8 mx-auto sm:max-w-none sm:flex sm:justify-center" data-aos="zoom-y-out" data-aos-delay="300">
                 <div>
-                  <a className="btn bg-gradient-to-br from-orange-400 to-yellow-400 text-black hover:bg-orange-500/90 w-full mb-4 sm:w-auto sm:mb-0 rounded-lg" href="#pay">Pre-order the package</a>
+                  <a className="btn bg-gradient-to-br from-orange-400 to-yellow-400 text-black hover:bg-orange-500/90 w-full mb-4 sm:w-auto sm:mb-0 rounded-lg" href="#pay">Pre-order now</a>
                 </div>
                 <div>
                   <a onClick={() => setIsModalOpen(true)} className="btn text-white bg-gray-900 hover:bg-gray-800 w-full sm:w-auto sm:ml-4 rounded-lg" href="#0">Try out demo for free</a>

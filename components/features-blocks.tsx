@@ -6,22 +6,27 @@ export default function FeaturesBlocks() {
     <section>
       {/* Section header */}
       <div className="max-w-3xl mx-auto text-center pb-12 md:pb-20 ">
-        <div className="text-5xl mb-6 leading-snug inline-flex gap-3 font-block">
-          <span className="text-red-400 mx-5 line-through tracking-wider font-sans">Generic CRM</span>
-          <span className="bg-clip-text text-transparent bg-gradient-to-tl from-emerald-500 to-emerald-300 font-bold mt-0.5">
-            Tailored <span className="tracking-wider underline underline-offset-2 decoration-wavy">CRB✨</span>
+        <div className="lg:text-5xl text-3xl px-4 mb-6 leading-snug flex flex-col gap-3 font-block">
+          <span className="text-red-400 mx-5 tracking-wider decoration-slice font-inter line-through decoration-solid lg:text-4xl">Generic overpriced CRM👎🏾❌</span>
+          <span>
+            <span className="tracking-wider underline underline-offset-2 decoration-wavy bg-clip-text text-transparent bg-gradient-to-b from-emerald-500 via-emerald-400 to-emerald-600 font-bold mt-0.5">Customer Relationship Builder</span>
+            ✨💚
           </span>
         </div>
 
         <p className="md:text-xl text-lg text-gray-600">
           <Balancer>
-            CRB stands for.. (drum rolll pleaseee!!) .. Customer. Relationship. Builder.
+            The
+            <span className="font-bold text-green-400 ml-1.5">C</span>ustomer
+            <span className="font-bold text-green-400 ml-1.5">R</span>elationship
+            <span className=" font-bold text-green-500 ml-1.5">B</span>uilder
+            that gets you results.
           </Balancer>
         </p>
 
         <p className="text-xl text-gray-600">
           <Balancer>
-            Put a face to each sale and make it count for more.
+            Put a face to each purchase and make it count for more.
           </Balancer>
         </p>
 
